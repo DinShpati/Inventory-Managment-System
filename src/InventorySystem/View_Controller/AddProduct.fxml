@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="643.0" prefWidth="847.0" style="-fx-background-color: #b3d2df;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventorySystem.View_Controller.AddProduct">
+   <children>
+      <Label layoutX="58.0" layoutY="14.0" text="Add Product" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="47.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <TextField fx:id="addProductID" disable="true" layoutX="97.0" layoutY="78.0" promptText="Auto Gen-Disabled" />
+      <Text layoutX="47.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="37.5078125" />
+      <TextField fx:id="addProductName" layoutX="97.0" layoutY="115.0" promptText="Product Name" />
+      <Text layoutX="47.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" wrappingWidth="37.5078125" />
+      <TextField fx:id="addProductInv" layoutX="97.0" layoutY="154.0" promptText="Product Inv" />
+      <Text layoutX="47.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="37.5078125" />
+      <TextField fx:id="addProductPrice" layoutX="97.0" layoutY="195.0" promptText="Product Price" />
+      <Text layoutX="47.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="37.5078125" />
+      <TextField fx:id="addProductMax" layoutX="97.0" layoutY="235.0" prefHeight="25.0" prefWidth="97.0" promptText="Product Max" />
+      <Text layoutX="213.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="37.5078125" />
+      <TextField fx:id="addProductMin" layoutX="251.0" layoutY="235.0" prefHeight="25.0" prefWidth="91.0" promptText="Product Min" />
+      <TextField fx:id="partSeach" layoutX="654.0" layoutY="12.0" onAction="#partSearchHandler" promptText="Search Part ID or Name" />
+      <TableView fx:id="part_table" layoutX="369.0" layoutY="51.0" prefHeight="214.0" prefWidth="464.0">
+         <columns>
+            <TableColumn fx:id="part_id" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="part_name" prefWidth="124.0" text="Part Name" />
+            <TableColumn fx:id="part_inv" prefWidth="102.0" text="Inventory Level" />
+            <TableColumn fx:id="part_cost" prefWidth="162.0" text="Price/ Cost Per Unit" />
+         </columns>
+      </TableView>
+      <TableView fx:id="part_table1" layoutX="369.0" layoutY="317.0" prefHeight="214.0" prefWidth="464.0">
+         <columns>
+            <TableColumn fx:id="part_id1" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="part_name1" prefWidth="124.0" text="Part Name" />
+            <TableColumn fx:id="part_inv1" prefWidth="102.0" text="Inventory Level" />
+            <TableColumn fx:id="part_cost1" prefWidth="162.0" text="Price/ Cost Per Unit" />
+         </columns>
+      </TableView>
+      <Button fx:id="addPart" layoutX="729.0" layoutY="281.0" mnemonicParsing="false" onAction="#addPartHandler" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #179be6; -fx-border-radius: 5px;" text="Add" />
+      <Button fx:id="removePart" layoutX="682.0" layoutY="549.0" mnemonicParsing="false" onAction="#removePartHandler" style="-fx-background-color: #179be6; -fx-border-radius: 5px;" text="Remove Associated Part" />
+      <Button fx:id="saveAddProduct" layoutX="682.0" layoutY="596.0" mnemonicParsing="false" onAction="#saveAddProductHandler" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #179be6; -fx-border-radius: 5px;" text="Save" />
+      <Button fx:id="cancelAddProduct" layoutX="777.0" layoutY="596.0" mnemonicParsing="false" onAction="#cancelAddProductHandler" style="-fx-background-color: #179be6; -fx-border-radius: 5px;" text="Cancel" />
+   </children>
+</AnchorPane>

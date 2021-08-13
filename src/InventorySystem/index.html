@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory System</title>
+    <!--#############################################################
+        # Please open this page in the browser for your convenience #
+        # Thank You                                                 #
+        #############################################################-->
+</head>
+<body style="padding: 50px 10vw; background-color: #07081a; color: #cfcfcf;font-family: 'Open Sans'">
+    <h3>Create an index.html file of your comments to include with your submission, excluding the provided part class that cannot be modified, based on Oracle’s guidelines for the Javadoc tool. Include a description of the following in your comments:</h3>
+    <hr>
+    <h4> - A detailed description of a logical or runtime error that you corrected in the code and a detailed description of how you corrected it above the line of code you are referring to</h4>
+    <p>
+        An error that took me around 2 days to solve was a runtime error produced by the IDE. At first I tried using NetBeans but quickly changed my mind and reverted
+        back to IntelliJ. I was getting this error on both NetBeans as well as IntelliJ. I added the JavaFX library and changed the VM options to point to the JavaFX
+        controls and fxml. I also installed a couple of JavaFX plugins thinking that maybe they would be of use. I decided to just create a test program and load the
+        fxml file. I ran the file and instantly got an error "Exception in Application start method". The error was much longer but that was the first line. I scrolled
+        in the error message and found a line saying "at application.Main.start(Main.java:14)". On that line, I was loading the MainScreen.FXMl file. After playing around
+        with VM options for 3 hours, reinstalling java and JavaFX, searching on google for similar errors that someone may have had(surprisingly no one had the exact problem
+        as mine, therefore there wasn't anything helpful), and trying out a bunch of plugins, I finally figured out the cause of the error. The error wasn't being caused by
+        any of the things I had touched but instead, it was because I had accidentally included a "/" in front of the "View_Controller" folder path in the FXML loader.
+    </p>
+    <br>
+    <hr>
+    <h4>- A compatible feature suitable to your application that would extend functionality to the next version if you were to update the application</h4>
+    <p>
+        If I were to update this application, I would add two features that I think are important in a application such as this one.
+        <br>
+        <ol>
+            <li>
+                The first feature I would add is a database. I think that a database is necessary for an application such as this one especially
+                because you are storing so much important information. Another great reason to have a database is that if you have other people
+                that need to have access to that information, you can easily share that database or host that database on a server so that everyone
+                has easy access to updated information.
+            </li>
+            <li>
+                The second important feature that I would add to this application is a login page for access the application.
+                This is actually related to the database which is the first feature because you will have to store the login
+                information in the database. Having a login before accessing this application is crucial for the privacy of
+                the company/individuals that will be using the application.
+            </li>
+        </ol>
+    </p>
+    <BR>
+    <h5>Din Spataj - dspata2@wgu.edu - #001325332</h5>
+</body>
+</html>

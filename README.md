@@ -33,4 +33,4 @@
 #### The Modify pages of the products section and the parts section has the same UI as the adding parts/products section. Deleteing products/parts is very easy, simply select the product/part the you want to remove and click on the delete button. A confirmation will pop up and all you need to do is confirm and you're all set. 
 
 #### ADDITIONAL REPORT
-![](![image](https://user-images.githubusercontent.com/25906602/129331458-f683cd9d-e0bf-4567-b5f5-f8cb050d84c4.png))
+![](https://github.com/DinShpati/Inventory-Managment-System-C482/blob/main/imgs/Capture.PNG?raw=true)

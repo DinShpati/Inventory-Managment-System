@@ -1,9 +1,4 @@
-# Inventory-Managment-System-C482
-
-### Program Title: C482 Inventory Managment System
-### Purpose: This is a inventory management system that stores data locally on the computer. School Project. 
-### Author: Din Spataj
-### Contact Info: dspataj@gmail.com
+# Inventory-Managment-System
 
 #### Application Version: 1.0
 #### Date of build: 8 August 2020
